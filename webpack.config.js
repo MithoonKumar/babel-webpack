@@ -8,11 +8,9 @@ module.exports = {
     },
     module: {
          loaders: [
-                    { test: /\.css$/, loader: 'style-loader!css-loader' },
-                    { test: /\.js$/, loader: 'babel-loader', query: {presets: ['es2015'] }}
-            ]
-    },
-    externals: {
-    jquery: 'jQuery'   // this will tell the bundles not import jQuery in js file when found in js files
-  }
+                    { test: /\.css$/, loader: 'style-loader!css-loader' }
+            ],
+            noParse: /one/ // this will not parse one.js file but the file will be include as it is.
+    }
+
 }
