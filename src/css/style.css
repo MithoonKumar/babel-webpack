@@ -4,3 +4,7 @@
   color: green;
   background-color: grey;
 }
+
+body {
+  background-image: url("../image/plant.jpeg");
+}
